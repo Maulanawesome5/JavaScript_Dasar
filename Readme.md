@@ -21,13 +21,16 @@ Karena JavaScript sekarang hampir di adopsi oleh semua aplikasi browser, akhirny
 ## Referensi
 
 1. Channel URL
-	* Programmer Zaman Now : <http://www.youtube.com/c/ProgrammerZamanNow>
-	* next..
+
+   * Programmer Zaman Now : <http://www.youtube.com/c/ProgrammerZamanNow>
+   * next..
 
 2. Video URL
-	* Programmer Zaman Now : <>
-	* next..
+
+   * Programmer Zaman Now : <https://youtu.be/SDROba_M42g>
+   * next..
 
 3. Playlist URL
-	* Programmer Zaman Now : <>
-	* next..
+
+   * Programmer Zaman Now : <https://youtube.com/playlist?list=PL-CtdCApEFH8SS0Gsj9_a0cC0jypFEoSg>
+   * next..

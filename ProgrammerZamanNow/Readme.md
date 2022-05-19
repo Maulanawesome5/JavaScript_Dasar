@@ -31,5 +31,5 @@ Karena JavaScript sekarang hampir di adopsi oleh semua aplikasi browser, akhirny
 ## Referensi
 
 1. Channel URL  : <http://www.youtube.com/c/ProgrammerZamanNow>
-2. Video URL    : <>
-3. Playlist URL : <>
+2. Video URL    : <https://youtu.be/SDROba_M42g>
+3. Playlist URL : <https://youtube.com/playlist?list=PL-CtdCApEFH8SS0Gsj9_a0cC0jypFEoSg>
