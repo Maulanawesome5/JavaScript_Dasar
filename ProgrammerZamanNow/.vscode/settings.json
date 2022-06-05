@@ -1,4 +1,5 @@
 {
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "vscode-icons",
+    "editor.minimap.enabled": false,
 }
