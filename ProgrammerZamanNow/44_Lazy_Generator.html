@@ -9,21 +9,50 @@
 <body>
     <script>
         /**
+         * Function generator memakai kata 'yield' sebagai ganti dari 'return'.
+         * Untuk mengakses data dari function generator, hanya bisa pakai iterasi.
+         * Function generator tidak bisa diakses memakai index system.
+         * 
          * Lazy Generator
-         * Apakah apa
-         * Anukah anu
+         * Function generator itu bersifat lazy, artinya apabila data belum diambil
+         * dari generator, maka yield selanjutnya tidak akan dieksekusi.
+         * Selain itu apabila nama dari function generator tidak di panggil, maka tidak ada
+         * aksi yang akan dieksekusi.
+         * 
+         * Keyboard aku rusak. Copy tombol disini -> g, G, h, H, '_', "_"
         */
 
+        // ini function generator. Diberi tanda * setelah menulis kata function
         function* Odd_Number(val){
-            for (let i = 1; i <= val; i++) {
-                if (i % 2 === 1) {
+            for (let i = 1; i <= val; i++){
+                if (i % 2 === 1){
                     console.info(`Loop -> ${i}`);
                     yield i;
                 }
             }
         }
-        
+
+        // eager -> yield dilakukan dulu, setelah itu baru dilakukan iterasi
+        function array_Odd_Numbers(values){
+            const result = [];
+            for(let i = 1; i <= values; i++){
+                if(i % 2 === 1){
+                    console.info(`Yield ${i}`);
+                    result.push(i);
+                }
+            }
+            return result;
+        }
+
         const bilangan_ganjil = Odd_Number(100);
+        const array_bilangan_ganjil = array_Odd_Numbers(100);
+
+        for (const oddNumber of array_bilangan_ganjil)
+        {
+            console.info(`Odd number = ${oddNumber}`);
+        }
+
+        // cara akses function generator
         console.info(bilangan_ganjil.next().value);
         console.info(bilangan_ganjil.next().value);
         console.info(bilangan_ganjil.next().value);
@@ -31,4 +60,3 @@
     </script>
 </body>
 </html>
-<!-- Tutorial sampai 06:28:20 -->
