@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function | JavaScript</title>
+</head>
+<body>
+    <script>
+        /**
+         * Arrow Function
+         * Arrow Function adalah alternatif pembuatan function yang lebih
+         * sederhana dari function biasanya.
+         * Namun terdapat limitasi dan juga tidak bisa digunakan di semua situasi.
+         * 
+         * Kekurangan arrow function
+         * Tidak memiliki fitur arguments object
+         * Tidak bisa menggunakan function generator
+         * Tidak bisa mengakses "this" operator (object oriented)
+         * Tidak bisa mengakses super class
+         * 
+         * Arrow Function tanpa block kode
+         * Jika suatu arrow function isinya sederhana, misal hanya satu baris
+         * Maka arrow function bisa dibuat tanpa menggunakan block atau tanda { dan }
+         * 
+         * Arrow Function dengan Return
+         * Jika menggunakan block, maka kita PERLU menggunakan kata kunci return
+         * Jika tidak menggunakan block, maka TIDAK PERLU menggunakan return
+         * 
+         * Tombol keyboard rusak -> g, G, h, H, '_', "_"
+         */
+
+        // Arrow Function pakai block kode
+        const sayHello = (name) => {
+            const say = `Hello ${name}`;
+            console.info(say);
+        }
+
+        // Arrow Function tanpa block kode
+        const apaKabar = (name) => console.info(`Apa kabar ${name} ?`);
+        
+        // Arrow Function pakai return
+        const kuadrat = (a, b) => {
+            return a ** b;
+        }
+        
+        // memasukkan Arrow Function sebagai parameter function lain
+        function berikanNama(callback){
+            callback(`Tretan Muslim`);
+        }
+
+        sayHello("Maulana");
+        apaKabar("Bosku");
+        console.info(kuadrat(5, 4));
+        berikanNama( (name) => console.info(`Salam waras ${name} !!`) );
+
+    </script>
+</body>
+</html>
